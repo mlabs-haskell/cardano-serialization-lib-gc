@@ -1,6 +1,4 @@
 const process = (lib) => {
-  if (lib.__gcPointerStore) { return lib; }
-
   const finRegistry = new FinalizationRegistry((x) => {
     try {
       x.free();
@@ -31,7 +29,6 @@ const process = (lib) => {
     }
   });
 
-  lib.__gcPointerStore = finRegistry;
   return lib;
 };
 

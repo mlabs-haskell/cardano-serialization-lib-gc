@@ -22,4 +22,6 @@ setInterval(() => {
 }, 500) // gc will trigger proxies and underlying pointers
 ```
 
+This code will not leak, but if you try to use the original package, the memory usage will steadily grow.
+
 If you want to use this library as a CommonJS module, use legacy [csl-gc-wrapper](https://github.com/mlabs-haskell/csl-gc-wrapper) instead.
