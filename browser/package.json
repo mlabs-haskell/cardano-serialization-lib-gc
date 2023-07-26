@@ -1,0 +1,19 @@
+{
+  "name": "@mlabs-haskell/cardano-serialization-lib-gc-browser",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This is a small library that provides a wrapper for managing garbage collection for cardano-serialization-library (Browser version)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlabs-haskell/cardano-serialization-lib-gc.git"
+  },
+  "author": "klntsky",
+  "license": "ISC",
+  "dependencies": {
+    "@emurgo/cardano-serialization-lib-browser": "^11.4.0"
+  }
+}
