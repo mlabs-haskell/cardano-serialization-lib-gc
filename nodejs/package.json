@@ -1,6 +1,6 @@
 {
   "name": "@mlabs-haskell/cardano-serialization-lib-gc-nodejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a small library that provides a wrapper for managing garbage collection for cardano-serialization-library (NodeJS version)",
   "module": "index.js",
   "scripts": {
