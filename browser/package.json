@@ -1,6 +1,7 @@
 {
   "name": "@mlabs-haskell/cardano-serialization-lib-gc-browser",
-  "version": "1.0.2",
+  "type": "commonjs",
+  "version": "1.0.3",
   "description": "This is a small library that provides a wrapper for managing garbage collection for cardano-serialization-library (Browser version)",
   "module": "index.js",
   "scripts": {
