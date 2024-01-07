@@ -1,0 +1,30 @@
+{
+  "name": "@mlabs-haskell/cardano-serialization-lib-gc",
+  "type": "module",
+  "version": "1.0.6",
+  "description": "This is a small wrapper for managing garbage collection for @emurgo/cardano-serialization-library",
+  "module": "./nodejs/index.js",
+  "main": "./nodejs/index.js",
+  "exports": "./nodejs/index.js",
+  "browser": "./browser/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlabs-haskell/cardano-serialization-lib-gc.git"
+  },
+  "author": "klntsky",
+  "license": "ISC",
+  "dependencies": {
+    "@emurgo/cardano-serialization-lib-browser": "^11.2.1",
+    "@emurgo/cardano-serialization-lib-nodejs": "^11.2.1",
+    "@mlabs-haskell/csl-gc-wrapper": "^1.0.1"
+  },
+  "files": [
+    "./nodejs/index.js",
+    "./browser/index.js",
+    "./README.md",
+    "./package.json"
+  ]
+}

@@ -1,13 +1,17 @@
 # cardano-serialization-lib-gc
 
-This is a small ESM library that provides a wrapper for managing garbage collection for  [cardano-serialization-library](https://github.com/Emurgo/cardano-serialization-lib). It does this by using a FinalizationRegistry object to keep track of objects that are no longer in use, and calling the `free()` method on them when they are finalized.
+This is a small ESM library that provides a wrapper for managing garbage collection for  [cardano-serialization-library](https://github.com/Emurgo/cardano-serialization-lib). It does this by using a `FinalizationRegistry` object to keep track of objects that are no longer in use, and calling the `free()` method on them when they are finalized.
 
-Two packages are provided: `-nodejs` and `-browser` versions.
+Three packages are provided:
+
+- `@mlabs-haskell/cardano-serialization-lib-gc-nodejs`
+- `@mlabs-haskell/cardano-serialization-lib-gc-browser`
+- `@mlabs-haskell/cardano-serialization-lib-gc` - a version for both NodeJS and the browser
 
 Example usage with NodeJS:
 
 ```javascript
-const lib = require("@mlabs-haskell/cardano-serialization-lib-gc-nodejs");
+const lib = require("@mlabs-haskell/cardano-serialization-lib-gc");
 
 function fixture() {
   lib.PlutusData.new_bytes(
@@ -19,7 +23,8 @@ setInterval(() => {
   for (let i = 0; i < 10; i++) {
     fixture()
   }
-}, 500) // gc will trigger proxies and underlying pointers
+}, 500) // collection of unused objects will trigger `free()` calls
+// for the corresponding WASM-allocated memory
 ```
 
 This code will not leak, but if you try to use the original package, the memory usage will steadily grow.
