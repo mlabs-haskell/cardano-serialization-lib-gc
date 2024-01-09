@@ -1,11 +1,9 @@
 {
   "name": "@mlabs-haskell/cardano-serialization-lib-gc",
   "type": "module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This is a small wrapper for managing garbage collection for @emurgo/cardano-serialization-library",
-  "module": "./nodejs/index.js",
   "main": "./nodejs/index.js",
-  "exports": "./nodejs/index.js",
   "browser": "./browser/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
