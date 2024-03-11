@@ -23,7 +23,6 @@ export const decode_arbitrary_bytes_from_metadatum = lib["decode_arbitrary_bytes
 export const decode_metadatum_to_json_str = lib["decode_metadatum_to_json_str"];
 export const decode_plutus_datum_to_json_str = lib["decode_plutus_datum_to_json_str"];
 export const decrypt_with_password = lib["decrypt_with_password"];
-export const default = lib["default"];
 export const encode_arbitrary_bytes_as_metadatum = lib["encode_arbitrary_bytes_as_metadatum"];
 export const encode_json_str_to_metadatum = lib["encode_json_str_to_metadatum"];
 export const encode_json_str_to_native_script = lib["encode_json_str_to_native_script"];
