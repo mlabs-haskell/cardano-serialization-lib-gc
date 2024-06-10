@@ -2,6 +2,9 @@ const csl = await import("@emurgo/cardano-serialization-lib-nodejs");
 const f = await import('@mlabs-haskell/csl-gc-wrapper');
 const lib = f.default(csl);
 
+// DO NOT MODIFY THIS FILE MANUALLY: it was automatically generated
+// Use gen_exports.js to re-generate this file.
+
 export const Address = lib["Address"];
 export const AddressKind = lib["AddressKind"];
 export const Anchor = lib["Anchor"];
