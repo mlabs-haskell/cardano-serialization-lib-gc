@@ -4,7 +4,6 @@ const lib = f.default(csl);
 
 // DO NOT MODIFY THIS FILE MANUALLY: it was automatically generated
 // Use gen_exports.js to re-generate this file.
-
 export const Address = lib["Address"];
 export const AddressKind = lib["AddressKind"];
 export const Anchor = lib["Anchor"];
@@ -21,6 +20,7 @@ export const BigNum = lib["BigNum"];
 export const Bip32PrivateKey = lib["Bip32PrivateKey"];
 export const Bip32PublicKey = lib["Bip32PublicKey"];
 export const Block = lib["Block"];
+export const BlockEra = lib["BlockEra"];
 export const BlockHash = lib["BlockHash"];
 export const BootstrapWitness = lib["BootstrapWitness"];
 export const BootstrapWitnesses = lib["BootstrapWitnesses"];
@@ -117,6 +117,7 @@ export const PlutusDataKind = lib["PlutusDataKind"];
 export const PlutusDatumSchema = lib["PlutusDatumSchema"];
 export const PlutusList = lib["PlutusList"];
 export const PlutusMap = lib["PlutusMap"];
+export const PlutusMapValues = lib["PlutusMapValues"];
 export const PlutusScript = lib["PlutusScript"];
 export const PlutusScriptSource = lib["PlutusScriptSource"];
 export const PlutusScripts = lib["PlutusScripts"];
@@ -200,6 +201,7 @@ export const VRFCert = lib["VRFCert"];
 export const VRFKeyHash = lib["VRFKeyHash"];
 export const VRFVKey = lib["VRFVKey"];
 export const Value = lib["Value"];
+export const VersionedBlock = lib["VersionedBlock"];
 export const Vkey = lib["Vkey"];
 export const Vkeys = lib["Vkeys"];
 export const Vkeywitness = lib["Vkeywitness"];
