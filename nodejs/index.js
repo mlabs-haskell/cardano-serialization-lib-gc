@@ -4,7 +4,6 @@ const lib = f.default(csl);
 
 // DO NOT MODIFY THIS FILE MANUALLY: it was automatically generated
 // Use gen_exports.js to re-generate this file.
-
 export const Address = lib["Address"];
 export const AddressKind = lib["AddressKind"];
 export const Anchor = lib["Anchor"];
@@ -27,6 +26,7 @@ export const BootstrapWitness = lib["BootstrapWitness"];
 export const BootstrapWitnesses = lib["BootstrapWitnesses"];
 export const ByronAddress = lib["ByronAddress"];
 export const CborContainerType = lib["CborContainerType"];
+export const CborSetType = lib["CborSetType"];
 export const Certificate = lib["Certificate"];
 export const CertificateKind = lib["CertificateKind"];
 export const Certificates = lib["Certificates"];
@@ -64,6 +64,7 @@ export const FixedBlock = lib["FixedBlock"];
 export const FixedTransaction = lib["FixedTransaction"];
 export const FixedTransactionBodies = lib["FixedTransactionBodies"];
 export const FixedTransactionBody = lib["FixedTransactionBody"];
+export const FixedTxWitnessesSet = lib["FixedTxWitnessesSet"];
 export const FixedVersionedBlock = lib["FixedVersionedBlock"];
 export const GeneralTransactionMetadata = lib["GeneralTransactionMetadata"];
 export const GenesisDelegateHash = lib["GenesisDelegateHash"];
@@ -190,6 +191,7 @@ export const TransactionOutput = lib["TransactionOutput"];
 export const TransactionOutputAmountBuilder = lib["TransactionOutputAmountBuilder"];
 export const TransactionOutputBuilder = lib["TransactionOutputBuilder"];
 export const TransactionOutputs = lib["TransactionOutputs"];
+export const TransactionSetsState = lib["TransactionSetsState"];
 export const TransactionUnspentOutput = lib["TransactionUnspentOutput"];
 export const TransactionUnspentOutputs = lib["TransactionUnspentOutputs"];
 export const TransactionWitnessSet = lib["TransactionWitnessSet"];
@@ -238,10 +240,10 @@ export const encode_json_str_to_plutus_datum = lib["encode_json_str_to_plutus_da
 export const encrypt_with_password = lib["encrypt_with_password"];
 export const get_deposit = lib["get_deposit"];
 export const get_implicit_input = lib["get_implicit_input"];
+export const has_transaction_set_tag = lib["has_transaction_set_tag"];
 export const hash_auxiliary_data = lib["hash_auxiliary_data"];
 export const hash_plutus_data = lib["hash_plutus_data"];
 export const hash_script_data = lib["hash_script_data"];
-export const hash_transaction = lib["hash_transaction"];
 export const make_daedalus_bootstrap_witness = lib["make_daedalus_bootstrap_witness"];
 export const make_icarus_bootstrap_witness = lib["make_icarus_bootstrap_witness"];
 export const make_vkey_witness = lib["make_vkey_witness"];
