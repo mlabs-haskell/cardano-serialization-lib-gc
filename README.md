@@ -2,16 +2,10 @@
 
 This is a small ESM library that provides a wrapper for managing garbage collection for  [cardano-serialization-library](https://github.com/Emurgo/cardano-serialization-lib). It does this by using a `FinalizationRegistry` object to keep track of objects that are no longer in use, and calling the `free()` method on them when they are finalized.
 
-Three packages are provided:
-
-- `@mlabs-haskell/cardano-serialization-lib-gc-nodejs`
-- `@mlabs-haskell/cardano-serialization-lib-gc-browser`
-- `@mlabs-haskell/cardano-serialization-lib-gc` - a version for both NodeJS and the browser
-
 Example usage with NodeJS:
 
 ```javascript
-const lib = require("@mlabs-haskell/cardano-serialization-lib-gc");
+import * as lib from "@mlabs-haskell/cardano-serialization-lib-gc";
 
 function fixture() {
   lib.PlutusData.new_bytes(
